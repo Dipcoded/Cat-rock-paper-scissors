@@ -1,0 +1,110 @@
+body{
+  background: #1c254d;
+  color: tomato;
+  align-items: center;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.gamepanel{
+  background: #ffc2fc;
+  width: 100%;
+  height: 600px;
+  padding: 15px;
+  margin-top: -28px;
+  border: solid 2px black;
+  border-radius: 10px;
+}
+.heading{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 3px solid grey;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  height: 130px;
+  width: 100%;
+  gap: 10px;
+}
+.move{
+  border-radius: 170px;
+  border: solid 2px grey;
+  flex: 1;
+  box-sizing: border-box;
+  height: 100%;
+  width: 25%;
+}
+.move:active{
+  border: 3px solid black;
+}
+.rock{
+  display: flex;
+  justify-content: center;
+}
+.png{
+  height: 100%;
+  width: 100%;
+  border-radius: 170px;
+}
+.icon{
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.js-score{
+  font-weight: bold;
+  font-size: 20px;
+}
+.reset{
+  border-radius:3px;
+  font-size: 15px;
+  border: 1px solid black;
+  padding: 15px 25px;
+  margin-top: 15px;
+  margin-left: 170px;
+}
+.reset:active{
+  background: white;
+  border: 2px solid black ;
+}
+.js-result{
+  font-family: Sans-Serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 25px;
+  padding-left: 10px;
+  color: black;
+
+  
+}
+.js-score{
+  border: solid 1px black;
+  height: 50px;
+  width: 64%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90px;
+  background: white;
+}
+.js-moves{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  color: #1c254d;
+  font-weight: bold;
+  margin-left: 60px;
+}
+.js-moves::before {
+  content: "You";
+  margin: 15px;
+}
+
+.js-moves::after {
+  content: "Computer";
+  margin: 15px;
+}
